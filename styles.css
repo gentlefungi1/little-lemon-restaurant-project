@@ -5,6 +5,7 @@ body{
     margin-bottom: 3rem;
     margin-left: 5%;
     margin-right: 5%;
+    display: block;
 }
 
 
@@ -17,6 +18,8 @@ header > img{
 }
 
 nav ul{
+    display: flex;
+    justify-content: center;
     list-style: none;
     text-align: center;
     background-color: black;
@@ -30,13 +33,12 @@ nav li{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
-    overflow: hidden;
-    
-    
+    overflow: hidden;    
 }
 
 .nav-links{
     color: white;
+    text-decoration: none;
     
 }
 
@@ -50,15 +52,6 @@ nav li{
     background-color: #04AA6D;
     color: aqua;
 }
-
-
-/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
-@media screen and (max-width: 600px) {
-    .nav-links {
-      float: none;
-      display: block;
-    }
-  }
 
 
 /*section{
@@ -118,12 +111,6 @@ nav li{
 }
 
 
-@media (max-width: 800px)
-section {
-  flex-direction: column;
-}
-
-
 .book:hover{
     background-color: grey;
     text-decoration: underline;
@@ -146,6 +133,10 @@ section {
     max-width: 100%;
 }
 
+.foot4 li{
+    list-style: none;
+}
+
 h2{
     font-size: 2rem;
     color: black;
@@ -165,14 +156,16 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    margin-bottom: -1rem;
+    padding: 1rem;
 }
 
 .copy{
     color: white;
     text-align: right;
     margin-top: 4rem;
-    border-top: black;
+    border-top: red;
+    padding-bottom: 2rem;
 
     
 }
@@ -180,3 +173,67 @@ p{
 .logo2{
     width: 3.5rem;
 }
+
+
+@media (max-width: 800px) {
+    .sec1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec2 {
+        width: 100%; /* Make each article take up the full width */
+        margin-bottom: 20px; /* Add some space between articles */
+    }
+}
+
+
+@media (max-width: 394px) {
+    nav ul{
+        height: 30px;
+        
+    }
+    
+    nav li{
+        display: inline-block;
+        text-align: center;
+        padding: 8px 10px;
+        font-size: 15px; 
+    }
+}
+
+
+@media (max-width: 655px){
+    .sec h1{
+        font-size: 2.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .sec p{
+        font-size: 1.3rem;
+    }
+
+    .sec .book{
+        width: 150px;
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 20px;;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }   
+}
+
+
+
+@media (max-width: 409px){
+    .sec h1{
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .sec p{
+        font-size: 1rem;
+    }
+}
+

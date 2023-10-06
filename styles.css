@@ -1,0 +1,182 @@
+body{
+    background-color: #edefef;
+    font-family: 'Markazi Text', serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+header > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: 150px;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    background-color: black;
+    height: 50px;
+    
+}
+
+nav li{
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    
+    
+}
+
+.nav-links{
+    color: white;
+    
+}
+
+.nav-links:hover{
+    background-color: aquamarine;
+    color: grey;
+    text-decoration: underline;
+}
+
+.nav-links:active{
+    background-color: #04AA6D;
+    color: aqua;
+}
+
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+    .nav-links {
+      float: none;
+      display: block;
+    }
+  }
+
+
+/*section{
+    background-image: url("banner2.jpeg");
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+    width: 100%;
+    height: 250px;
+}*/
+
+.sec{
+    background-image: url("banner3.jpeg");
+    background-origin: content-box;
+    background-size: cover;
+    background-position: 75%;
+    color: white;
+    
+    min-height: 200px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    
+}
+
+.sec h1{
+    font-size: 4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+
+.sec p{
+    font-size: 2rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px #333333;
+}
+
+
+.white{
+    color: white;
+}
+
+
+.sec .book{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    border: 3px solid white;
+    width: 200px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+@media (max-width: 800px)
+section {
+  flex-direction: column;
+}
+
+
+.book:hover{
+    background-color: grey;
+    text-decoration: underline;
+}
+
+.sec1{
+    display: flex;
+    gap: 2rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-direction: row;
+}
+
+.sec2{
+    border: 2px solid;
+    padding: 20px;
+}
+
+.sec2 img{
+    max-width: 100%;
+}
+
+h2{
+    font-size: 2rem;
+    color: black;
+    margin: 1rem 0;
+}
+
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.foot{
+    background-color: black;
+    border: 1px solid #333333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.copy{
+    color: white;
+    text-align: right;
+    margin-top: 4rem;
+    border-top: black;
+
+    
+}
+
+.logo2{
+    width: 3.5rem;
+}

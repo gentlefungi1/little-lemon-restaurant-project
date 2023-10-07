@@ -175,6 +175,39 @@ p{
 }
 
 
+.abt1{
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid grey;
+}
+
+
+.abimg{
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-top: 7rem;
+}
+
+figcaption{
+    padding-left: 2rem;
+}
+
+
+.abtp{
+    padding-left: 1rem;
+    
+    font-size: 1.1rem;
+    
+}
+
+
+.abth1{
+    font-size: 2.5rem;
+    padding-left: 1rem;
+}
+
+
 @media (max-width: 800px) {
     .sec1 {
         display: flex;
@@ -186,6 +219,18 @@ p{
         width: 100%; /* Make each article take up the full width */
         margin-bottom: 20px; /* Add some space between articles */
     }
+
+    .abt1{
+        display: block;
+        padding: 1rem;
+    }
+
+    .abimg{
+        padding-top: 0;
+    }
+
+    
+
 }
 
 

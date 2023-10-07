@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Little Lemon</title>
     <meta name="description" content="A brief description">
     <meta name="author" content="Little Lemon Restaurant">
-
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="asset-16@4x.png" alt="little lemon logo">
+        <img src="asset-16@4x.png" alt="Little Lemon logo">
     </header>
     <nav>
         <ul>
@@ -23,36 +21,35 @@
         </ul>
     </nav>
     <main>
-        <section class="abt2">
-           <article>
-                <img class="abimg2" src="./image8.jpeg" alt="Restaurant picture">
-           </article>      
-           <article class="bookart">
+        <section class="abt1">
+            <article>
+                <img class="abimg" src="./image8.jpeg" alt="Restaurant picture">
+            </article>
+            <article class="bookart">
                 <h1 class="abth2">Make a reservation</h1>
                 <form action="./action_page.php" method="post" target="_blank" autocomplete="on">
                     <label class="abtp2" for="fname">First Name:</label><br>
-                    <input class="abtp2" type="text" id="fname"><br>
+                    <input class="abtp2" type="text" id="fname" name="fname"><br>
                     <label class="abtp2" for="lname">Last Name:</label><br>
-                    <input class="abtp2" type="text" id="lname"><br>
+                    <input class="abtp2" type="text" id="lname" name="lname"><br>
                     <label class="abtp2" for="gnumber">Guest Number:</label><br>
-                    <input class="abtp2" type="number" id="gnumber"><br>
-                    <label class="abtp2">Comments:</label><br>
+                    <input class="abtp2" type="number" id="gnumber" name="gnumber"><br>
+                    <label class="abtp2" for="comments">Comments:</label><br>
                     <textarea class="abtp2" name="comments" id="comments" rows="10" cols="30"></textarea><br>
-                    <input class="submit" class="abtp" type="submit" value="Submit">
+                    <input class="submit abtp" type="submit" value="Submit">
                 </form>
-           </article>          
-        </section> 
+            </article>
+        </section>
     </main>
     <footer>
         <section class="foot">
             <article>
-                <img class="logo2" src="asset-20@4x.png" alt="footer logo">
+                <img class="logo2" src="asset-20@4x.png" alt="Footer logo">
             </article>
             <article>
-                <p class="copy">Copyright Little Lemon &copy;</p>
+                <p class="copy">Copyright Little Lemon &copy; 2023</p>
             </article>
         </section>
-    </footer>    
-
+    </footer>
 </body>
-</html> 
+</html>
